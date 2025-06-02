@@ -1,0 +1,22 @@
+presets:
+  aggressive_io_fail:
+    interval: 1
+    probability: 80
+    target: make_request
+    task_filter: 0
+    times: 20
+    verbose: 1
+  light_mem_test:
+    interval: 100
+    probability: 10
+    target: pagealloc
+    task_filter: 0
+    times: 5
+    verbose: 1
+  test1:
+    interval: 100
+    probability: 10
+    target: slab
+    task_filter: 0
+    times: 10
+    verbose: 1
